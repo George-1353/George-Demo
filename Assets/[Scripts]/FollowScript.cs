@@ -16,13 +16,12 @@ public class FollowScript : MonoBehaviour
 
 
         // calculate distance to move
-        float distance = Speed * Time.deltaTime;
+        float distance = Speed * Time.deltaTime; 
 
 
-        //Debug.Log("FOLLOW THE HUMAN!!");
+        Debug.Log("FOLLOW THE HUMAN!!");
 
         Dog.position = Vector3.MoveTowards(Dog.position, Human, distance);
-
 
         RotateTowardsTarget();
     }
