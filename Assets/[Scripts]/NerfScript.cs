@@ -20,7 +20,7 @@ public class NerfScript : MonoBehaviour
         GameObject Dart = null;
 
         Debug.Log("LAUNCH THE PROJECTILE!");
-
+        Dart = Instantiate(DartPrefab, SpawnLocation.position, SpawnLocation.rotation);
         return Dart;
     }
 
