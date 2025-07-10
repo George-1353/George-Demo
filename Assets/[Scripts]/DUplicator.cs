@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DUplicator : MonoBehaviour
+public class Duplicator : MonoBehaviour
 {
-    public GameObject ball;
+    public GameObject prefab;
 
     public Transform spawn;
 
@@ -17,6 +17,6 @@ public class DUplicator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Instantiate(ball, spawn.position, spawn.rotation);
+        Instantiate(prefab, spawn.position, spawn.rotation);
     }
 }
